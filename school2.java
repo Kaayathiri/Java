@@ -5,7 +5,8 @@ class results2{
 			phy=P;
 		}
 	else {
-		System.out.println("Invalid entry");
+		phy=-1;
+		System.out.println("Invalid Physics entry");
 	}
 }
 	public void chemistry (int C){
@@ -13,7 +14,8 @@ class results2{
 			chem=C;
 		}
 		else {
-			System.out.println("Invalid entry");
+			chem=-1;
+			System.out.println("Invalid Chemsitry entry");
 		}
 	}
 	public void maths (int M){
@@ -21,20 +23,33 @@ class results2{
 			maths=M;
 		}
 		else{
-			System.out.println("Invalid entry");
+			maths=-1;
+			System.out.println("Invalid Maths entry");
 		}
 		}
 	public void showresults2(){
 		int total=phy+maths+chem;
-			if (total>=150){
-				System.out.println("You have passed! ");
+			if (phy==-1 || chem==-1|| maths==1){
+				System.out.println("No results");
 			}
 			else {
-				System.out.println("You have failed :(");
+				System.out.println("The total marks: "+ total);
+			
+				if (total>=150){
+					System.out.println("You have passed!");
+				}
+				else {
+					System.out.println("You have failed :(");
+				
+				}
 			}
-		System.out.println("The total marks: " + total);
-	}
-	}
+
+			
+		}
+			}
+		
+	
+	
 class school2{
 	public static void main(String xyz[]){
 		results2 Peter;
