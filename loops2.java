@@ -5,8 +5,5 @@ class loops2 {
 			System.out.println(A);
 		}
 
-
-
-
 	}
 }
