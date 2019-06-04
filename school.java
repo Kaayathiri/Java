@@ -2,8 +2,11 @@ class results {
 	int phy, chem, maths;
 	public void showresults(){
 		int total;
+		float per;
 		total=phy+chem+maths;
+		per=total*100F/250;
 		System.out.println("The total score is "+total);
+		System.out.println("The total percentage is "+ per);
 		if (total>=250){
 			System.out.println("Passed!");
 		}
@@ -18,12 +21,12 @@ class school{
 		results john,peter;
 		john=new results();
 		peter= new results();
-		peter.maths=100;
-		peter.phy=120;
-		peter.chem=140;
-		john.maths=40;
-		john.phy=20;
-		john.chem=50;
+		peter.maths=115;
+		peter.phy=126;
+		peter.chem=142;
+		john.maths=47;
+		john.phy=23;
+		john.chem=59;
 
 		peter.showresults();
 		john.showresults();
