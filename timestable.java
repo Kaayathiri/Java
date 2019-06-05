@@ -2,7 +2,6 @@ class timestable{
 	public static void main (String xyz[]){
 		int a;
 		int c = 0;
-
 		int b;
 		for (a=1;a<=10;a++){
 			System.out.println("Table of " + a);
